@@ -5,12 +5,12 @@ public class Primes {
         System.out.println("Prime numbers up to " + n + ":");
         for (int i = 0; i <= n; i++) {
             if (isPrime(i)) {
-            System.out.print(i + " ");
+            System.out.println(i);
             count++;
             }
         }
-        System.err.println();
-        System.err.println("There are " + count + " primes between 2 and " + n);
+        int percent = (count * 100) / n;
+        System.err.println("There are " + count + " primes between 2 and " + n + " (" + percent + "% are primes)");
     }
     public static boolean isPrime(int i) {
         if (i <= 1) return false;
