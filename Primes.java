@@ -10,7 +10,7 @@ public class Primes {
             }
         }
         int percent = (count * 100) / n;
-        System.err.println("There are " + count + " primes between 2 and " + n + " (" + percent + "% are primes)");
+        System.out.println("There are " + count + " primes between 2 and " + n + " (" + percent + "% are primes)");
     }
     public static boolean isPrime(int i) {
         if (i <= 1) return false;
